@@ -4,8 +4,6 @@ body{
 .centralized{
     display:table;
     margin: 0 auto;
-    border: 1px solid darkslategrey;
-    border-radius: 10%;
 }
 .centralizer{
     width: 100%;
