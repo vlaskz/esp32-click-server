@@ -8,3 +8,10 @@ body{
 .centralizer{
     width: 100%;
 }
+
+#coat-of-arms{
+  display:block;
+  margin-left: auto;
+  margin-right:auto;
+  width:30%;  
+}
