@@ -1,0 +1,3 @@
+[2020-05-30 23:19:37.706] [sharedprocess] [info] main {"machineId":"1cfbccb40e462b82e035fc11b63d25f4448efb20e49cac907a7a2347bf947a14","windowId":2}
+[2020-05-30 23:19:38.189] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/root/Área de trabalho/tbot/User/snippets'
+[2020-05-30 23:20:17.739] [sharedprocess] [info] Starting to clean up unused language packs.
