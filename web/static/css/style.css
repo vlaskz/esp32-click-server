@@ -1,8 +1,6 @@
 body{
     background-color:#efefef;
 }
-#content{
-    color:navy;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
+.centered{
+    margin: auto;
 }
