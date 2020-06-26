@@ -18,7 +18,7 @@
 
 </head>
 
-<body>
+<body onload="clickListener()">
     <section class="hero is-primary is-bold">
         <img id="coat-of-arms" src="https://ufob.edu.br/ingresso/images/marca_site1.png" 
             alt="coat-of-arms ufob">
@@ -43,15 +43,15 @@
                 <div class="field">
                     <label for="name" class="label">Nome</label>
                     <div class="control">
-                        <input name="name" type="text" class="input is-large is-primary"
+                        <input name="name" id="name "type="text" class="input is-large is-primary"
                             placeholder="Insira seu nome aqui!">
                     </div>
                     <label for="message" class="label">Mensagem</label>
                     <div class="control">
-                        <input name="message" type="text" class="input is-large is-primary" placeholder="Insira sua mensagem aqui!">
+                        <input name="message" id="message" type="text" class="input is-large is-primary" placeholder="Insira sua mensagem aqui!">
                     </div>
                     <div class="control has-text-centered">
-                        <input type="submit" class="button is-primary is-large is-fullwidth" value="Enviar Mensagem ao Dev">
+                        <input type="submit" id="button" class="button is-primary is-large is-fullwidth" value="Enviar Mensagem ao Dev">
                     </div>
                 </div>
             </form>

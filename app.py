@@ -1,5 +1,6 @@
 from flask import Flask, request
 import json
+import time
 
 
 app = Flask(__name__,
@@ -9,7 +10,6 @@ app = Flask(__name__,
 
 
 def apnd_to_json(name, message):
-    print('initializing function')
     with open('web/static/messages.json', 'r+') as file:
         data = json.load(file)
         data.update({name: message})
@@ -23,6 +23,7 @@ def clicked():
         name = request.values.get('name')
         message = request.values.get('message')
         apnd_to_json(name, message)
+        time.sleep(3)
         return app.send_static_file('index.html')
     else:
         return app.send_static_file('index.html')
