@@ -7,14 +7,15 @@ app = Flask(__name__,
     template_folder='web/template')
     
 
-@app.route('/')
-def index():
+@app.route('/', methods=['GET', 'POST'])
+def clicked():
+if request.method == 'POST':
+        name = request.values.get('name')
+        message = request.values.get('message')
+        print('name:', name, ' message:', message)
+if method =='GET':
+else:
     return app.send_static_file('index.html')
-
-@app.route('/clicked', methods=['POST'])
-def send_click():
-    return 'clicked'
-
 
 if __name__ == '__main__':
     app.run(threaded=True)
