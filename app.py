@@ -13,6 +13,7 @@ def clicked():
             name = request.values.get('name')
             message = request.values.get('message')
             print('name:', name, ' message:', message)
+            return app.send_static_file('index.html')
     else:
         return app.send_static_file('index.html')
 
