@@ -9,7 +9,8 @@ app = Flask(__name__,
 
 
 def apnd_to_json(name, message):
-    data_to_append = json.dumps([name, message])
+    data = {name: message}
+    data_to_append = json.dumps(data)
     with open('messages.json', 'r+') as file:
         data = json.load(file)
         data.update(data_to_append)
