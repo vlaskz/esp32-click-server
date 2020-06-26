@@ -11,15 +11,11 @@ app = Flask(__name__,
 def apnd_to_json(name, message):
     print('initializing function')
     with open('messages.json', 'r+') as file:
-        print('opening messages.json')
         data = json.load(file)
-        print('loading as file object')
         data.update({name: message})
-        print('updating message')
         file.seek(0)
-        print('seeking cursor to zero')
         json.dump(data, file)
-        print('dumping')
+        print(data)
 
 @app.route('/', methods=['GET', 'POST'])
 def clicked():
