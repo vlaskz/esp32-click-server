@@ -18,10 +18,10 @@ def append(name, message):
 @app.route('/', methods=['GET', 'POST'])
 def clicked():
     if request.method == 'POST':
-            name = request.values.get('name')
-            message = request.values.get('message')
-            append(name, message)
-            return app.send_static_file('index.html')
+        name = request.values.get('name')
+        message = request.values.get('message')
+        append(name, message)
+        return app.send_static_file('index.html')
     else:
         return app.send_static_file('index.html')
 
