@@ -11,6 +11,10 @@ app = Flask(__name__,
 def index():
     return app.send_static_file('index.html')
 
+@app.route('/clicked', methods=['POST'])
+def send_click():
+    return 'clicked'
+
 
 if __name__ == '__main__':
     app.run(threaded=True)
