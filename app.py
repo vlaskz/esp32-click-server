@@ -10,7 +10,7 @@ app = Flask(__name__,
 
 def apnd_to_json(name, message):
     print('initializing function')
-    with open('messages.json', 'r+') as file:
+    with open('web/static/messages.json', 'r+') as file:
         data = json.load(file)
         data.update({name: message})
         file.seek(0)
