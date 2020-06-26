@@ -37,6 +37,7 @@
     <section id="form-section" class="section">
         <div class="container centralizer">
             <div class="centralized">
+                <form action="/clicked" method="post">
                 <div class="field">
                     <label for="name" class="label">Nome</label>
                     <div class="control">
@@ -44,9 +45,10 @@
                             placeholder="Insira seu nome aqui!">
                     </div>
                     <div class="control has-text-centered">
-                        <button class="button is-primary is-large is-fullwidth">Click</button>
+                        <input type="submit" class="button is-primary is-large is-fullwidth" value="CLICK">
                     </div>
                 </div>
+            </form>
             </div>
         </div>
     </section>
@@ -54,10 +56,10 @@
 
     <section class="section">
         <div class="container centralizer">
-            <p class="subtitle has-text-justified is-4">Proof of Concept criada para o Webinar que será apresentado
+            <p class="subtitle has-text-justified is-4 content">Proof of Concept criada para o Webinar que será apresentado
                 em 02/07/2020 na UFOB - Universidade Federal do Oeste da Bahia. Será apresentado por Isaias C. Velasqsuez.
                 Este projeto teve a imensa colaboração de:</p>
-                <ul>
+                <ul class="content">
                     <li>Prof. Ademário Carvalho</li>
                     <li>Emily Cerqueira</li>
                     <li>Mariana Farias</li>
