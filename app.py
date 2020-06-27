@@ -1,6 +1,7 @@
 from flask import Flask, request
 import json
 import time
+from datetime import datetime
 
 
 app = Flask(__name__,
@@ -12,7 +13,8 @@ app = Flask(__name__,
 def apnd_to_json(name, message):
     with open('web/static/messages.json', 'r+') as file:
         data = json.load(file)
-        data.update({name: message})
+        text = name + ' diz: ' + message
+        data.update({datetime.now().strftime('%d/%m/%Y %H:%M:%S'): message})
         file.seek(0)
         json.dump(data, file)
         print(data)

@@ -1,3 +1,3 @@
 # esp32-click-server
 Repo for Clicker Analyzer server project.
-The license for this repository is GNU Public License v3
+This project will be released as a GPLv3 someday, when I finish it to something that is relevant.
