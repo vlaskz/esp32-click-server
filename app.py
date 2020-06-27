@@ -14,7 +14,7 @@ def apnd_to_json(name, message):
     with open('web/static/messages.json', 'r+') as file:
         data = json.load(file)
         text = name + ' diz: ' + message
-        data.update({datetime.now().strftime('%d/%m/%Y %H:%M:%S'): message})
+        data.update({datetime.now().strftime('%d/%m/%Y %H:%M:%S'): text})
         file.seek(0)
         json.dump(data, file)
         print(data)
