@@ -1,0 +1,3 @@
+messageSent(){
+    alert("Mensagem enviada!")
+}

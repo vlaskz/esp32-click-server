@@ -25,7 +25,7 @@ def clicked():
         name = request.values.get('name')
         message = request.values.get('message')
         apnd_to_json(name, message)
-        time.sleep(1)
+        time.sleep(3)
         return app.send_static_file('index.html')
     else:
         return app.send_static_file('index.html')
